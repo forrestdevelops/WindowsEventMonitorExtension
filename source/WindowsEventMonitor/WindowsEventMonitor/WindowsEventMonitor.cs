@@ -150,7 +150,7 @@ namespace AppD.NETExtensions
 
             summary = ReplaceSplChars(summary);
 
-            AddProperties(e);
+            AddProperties(e, message);
 
             string comment = "Event originated from the Windows event log and provided by the .Net extension service. To filter this event use CustomEventType = " + ExtensionName;
 
@@ -198,7 +198,7 @@ namespace AppD.NETExtensions
             return isValid;
         }
 
-        private void AddProperties(EventRecord e)
+        private void AddProperties(EventRecord e, string message)
         {
             if (EventProperties == null)
             {
@@ -213,6 +213,8 @@ namespace AppD.NETExtensions
             _add(EventProperties, "machinename", e.MachineName);
 
             _add(EventProperties, "severity", e.LevelDisplayName);
+            
+            _add(EventProperties, "message", message);
         }
 
         private void _add(IDictionary<string, string> dictionary, string key, string value)
