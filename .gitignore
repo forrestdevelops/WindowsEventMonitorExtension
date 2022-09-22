@@ -4,5 +4,5 @@ obj/
 packages/
 *.suo
 *.pfx
-idea
+.idea
 .DS_Store
