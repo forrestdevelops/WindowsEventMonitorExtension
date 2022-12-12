@@ -4,7 +4,7 @@
 Windows Event message Monitor works with .NET Agent Extension Manager to capture and report specific windows event and the message associated with it.
 
 
-## Requirement
+## Requirements
 
 - .NET Agent Extension Manager 
 - The AppDynamics .NET Agent 
@@ -22,8 +22,7 @@ Windows Event message Monitor works with .NET Agent Extension Manager to capture
 ![alt text](/readme_images/FolderStructure.png)
 
 - Download and unzip the artifacts in the [publish directory](/publish/)
-- copy extension.xml and WindowsEventMonitor.dll from the publish folder to a new dirctory: 
-`<Extension Manager Root Directory>/Extensions`
+- copy extension.xml and WindowsEventMonitor.dll from the publish folder to a new dirctory in the `Extensions` subdirectory.
 
 
 ### Configure exstenstion
@@ -39,7 +38,7 @@ Windows Event message Monitor works with .NET Agent Extension Manager to capture
 
 ## Changes in 2.2.0
 
-This extenstion differs from the [original](https://github.com/Appdynamics/WindowsEventMonitorExtension) as it enables the message an addional property to filter by for the custom event 
+This extenstion differs from the [original](https://github.com/Appdynamics/WindowsEventMonitorExtension) as it enables the message as an addional property to filter by for the custom event 
 
 
 ## How to use 
